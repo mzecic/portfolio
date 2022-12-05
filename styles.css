@@ -53,6 +53,7 @@ h2 {
     height: 300px;
     margin: 0;
     margin-top: 100px;
+    transform: translateX(100px)
 }
 
 nav img {
@@ -184,7 +185,18 @@ nav img {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 25% 25% 25% 25%;
+}
 
+.projects-container li {
+    margin: 5px;
+    list-style: none;
+}
+
+.projects-container span {
+    font-size: 17px;
+    font-weight: bold;
+    color: rgb(63, 142, 197);
+    margin-bottom: 15px;
 }
 
 .card {
@@ -304,10 +316,14 @@ ul.img-3 {
 }
 
 ul.img-4 {
-    grid-column: 2/2;
-    grid-row: 4/4;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     font-size: 0.8rem;
     margin: 50px auto;
+    grid-column: 2/2;
+    grid-row: 4/4;
 }
 
 .about-container {
